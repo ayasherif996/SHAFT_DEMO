@@ -13,7 +13,7 @@ public class SecondSignUpPage {
 
     //Locators
 
-    By gender = By.xpath("//input[@id='id_gender2']");
+    By gender = By.id("id_gender2");
     By password = By.xpath("//input[@data-qa='password']");
     By select_Day= By.id("days");
     By select_Month = By.id("months");
