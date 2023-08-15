@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  TESTING_SCOPE:testJava.TestRegisterUser_pom
+  TESTING_SCOPE: testJava.TestRegisterUser_pom
 
 jobs:
   Windows_Edge_Local:
