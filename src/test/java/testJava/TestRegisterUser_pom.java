@@ -1,18 +1,23 @@
+package testJava;
+
 import com.shaft.driver.SHAFT;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import  Pages.*;
 
 public class TestRegisterUser_pom {
    SHAFT.GUI.WebDriver  driver;
+
 
     //  SoftAssert sa;
 
     @BeforeMethod
     public void setup() {
-        driver = new SHAFT.GUI.WebDriver();
+       driver = new SHAFT.GUI.WebDriver();
+       System.setProperty("webdriver.edge.verboseLogging", "true");
        driver.browser().navigateToURL("https://automationexercise.com/");
 
     }
@@ -30,7 +35,7 @@ public class TestRegisterUser_pom {
                 "Haram11", "cairo", "234521", "0107079982");
         new AccountCreatedPage(driver).AssertOnCreatedAccount("ACCOUNT CREATED!");
         new AccountCreatedPage(driver).ClickOnContinueButton();
-        new  MainMenuPage(driver).ClickOnDeleteButton();
+        new MainMenuPage(driver).ClickOnDeleteButton();
         new AccountDeletedPage(driver).AssertOnDeletionAnAccount("ACCOUNT DELETED!");
 
 

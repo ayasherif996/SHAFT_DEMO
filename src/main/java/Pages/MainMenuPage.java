@@ -1,7 +1,9 @@
+package Pages;
+
+import Pages.FirstSignUpPage;
+import Pages.HomePage;
 import com.shaft.driver.SHAFT;
-import org.ccil.cowan.tagsoup.ScanHandler;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class MainMenuPage {
 

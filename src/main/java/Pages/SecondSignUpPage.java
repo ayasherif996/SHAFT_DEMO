@@ -1,8 +1,7 @@
+package Pages;
+
 import com.shaft.driver.SHAFT;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 
 public class SecondSignUpPage {
     private SHAFT.GUI.WebDriver driver;
@@ -45,8 +44,8 @@ public class SecondSignUpPage {
 
 
 
-    public AccountCreatedPage EnterAddressInformation(String firstName1,String lastName1,String Address1,String country1,
-                                                      String state1,String city1,String Zipcode1,String phoneNumber1){
+    public AccountCreatedPage EnterAddressInformation(String firstName1, String lastName1, String Address1, String country1,
+                                                      String state1, String city1, String Zipcode1, String phoneNumber1){
         driver.element().type(FirstName,firstName1);
         driver.element().type(LastName,lastName1);
         driver.element().type(Address,Address1);
